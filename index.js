@@ -178,9 +178,9 @@ async function handleInputLeft(e) {
         load.style.display = 'flex';
         let reqPromise = await fetch(`https://api.ratesapi.io/api/latest?base=${from}&symbols=${to}`)
         let respJson = await reqPromise.json();
-        load.style.display = 'none';
         let cur = respJson.rates[to];
         output.value = (cur * input.value).toFixed(2);
+        load.style.display = 'none';
     }
 
 }
@@ -197,9 +197,9 @@ async function handleInputRight(e) {
         load.style.display = 'flex';
         let reqPromise = await fetch(`https://api.ratesapi.io/api/latest?base=${to}&symbols=${from}`)
         let respJson = await reqPromise.json();
-        load.style.display = 'none';
         let cur = respJson.rates[from];
         output.value = (cur * input.value).toFixed(2);
+        load.style.display = 'none';
     }
 
 }

@@ -5,7 +5,7 @@ module.exports = {
         filename: './main.minified.js',
     },
 };
-module.exports = {…,
+module.exports = {
     module: {
         rules: [{
             test: /\.js$/,
