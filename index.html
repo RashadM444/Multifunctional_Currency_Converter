@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2|Baloo+Chettan+2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Exchange Point</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerElements">
+            <div class="forLogo"><img src="img/logo.png" alt="Bank logo image"></div>
+            <div class="forHeaders">
+                <div><a href="#">Bank</a></div>
+                <div><a href="#">Business</a></div>
+                <div><a href="#">Investments</a></div>
+                <div><a href="#">Insurance</a></div>
+                <div><a href="#">Mobile</a></div>
+                <div><a href="#">Travel</a></div>
+                <div><a href="#">Entertainment</a></div>
+            </div>
+            <div class="forLogin"><button id="login">Log In</button></div>
+        </div>
+    </header>
+    <div class="bodyElements">
+        <div class="forHeaderTag">
+            <h1>Currency Exchange</h1>
+        </div>
+        <div class="calcElements">
+            <div class="calcSide left-side">
+                <div class="forTitle">
+                    <p>I have:</p>
+                </div>
+                <div class="forCurrencies leftSide">
+                    <div class="cur left s active">
+                        RUB
+                    </div>
+                    <div class="cur left s">
+                        USD
+                    </div>
+                    <div class="cur left s">
+                        EUR
+                    </div>
+                    <div class="cur left s">
+                        GBP
+                    </div>
+                    <select class="cur left curListLeft" name="curList" id="curListForLeft">
+                                <option value="HKD">HKD</option>
+                                <option value="IDR">IDR</option>
+                                <option value="ILS">ILS</option>
+                                <option value="DKK">DKK</option>
+                                <option value="INR">INR</option>
+                                <option value="CHF">CHF</option>
+                                <option value="MXN">MXN</option>
+                                <option value="CZK">CZK</option>
+                                <option value="SGD">SGD</option>
+                                <option value="THB">THB</option>
+                                <option value="HRK">HRK</option>
+                                <option value="MYR">MYR</option>
+                                <option value="NOK">NOK</option>
+                                <option value="CNY">CNY</option>
+                                <option value="BGN">BGN</option>
+                                <option value="PHP">PHP</option>
+                                <option value="PLN">PLN</option>
+                                <option value="ZAR">ZAR</option>
+                                <option value="CAD">CAD</option>
+                                <option value="ISK">ISK</option>
+                                <option value="BRL">BRL</option>
+                                <option value="RON">RON</option>
+                                <option value="NZD">NZD</option>
+                                <option value="TRY">TRY</option>
+                                <option value="JPY">JPY</option>
+                                <option value="KRW">KRW</option>
+                                <option value="HUF">HUF</option>
+                                <option value="AUD">AUD</option>
+                                
+                            </select>
+
+                </div>
+                <div class="calcBox">
+                    <div class="Input"><input type="number" step="any" class="forInput leftInput" placeholder="1.00"></div>
+                    <div class="curInfo">
+                        <p class="forCurInfo leftCurInfo">1 RUB= 0.093434 USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="calcCenter"><img id="swap" src="/img/arrows.png" alt="image of arrows"></div>
+            <div class="calcSide right-side">
+                <div class="forTitle">
+                    <p>I want:</p>
+                </div>
+                <div class="forCurrencies rightSide">
+                    <div class="cur right d">
+                        RUB
+                    </div>
+                    <div class="cur right d active">
+                        USD
+                    </div>
+                    <div class="cur right d">
+                        EUR
+                    </div>
+                    <div class="cur right d">
+                        GBP
+                    </div>
+                    <select class="cur right curListRight" name="curList" id="curList">
+                                <option value="HKD">HKD</option>
+                                <option value="IDR">IDR</option>
+                                <option value="ILS">ILS</option>
+                                <option value="DKK">DKK</option>
+                                <option value="INR">INR</option>
+                                <option value="CHF">CHF</option>
+                                <option value="MXN">MXN</option>
+                                <option value="CZK">CZK</option>
+                                <option value="SGD">SGD</option>
+                                <option value="THB">THB</option>
+                                <option value="HRK">HRK</option>
+                                <option value="MYR">MYR</option>
+                                <option value="NOK">NOK</option>
+                                <option value="CNY">CNY</option>
+                                <option value="BGN">BGN</option>
+                                <option value="PHP">PHP</option>
+                                <option value="PLN">PLN</option>
+                                <option value="ZAR">ZAR</option>
+                                <option value="CAD">CAD</option>
+                                <option value="ISK">ISK</option>
+                                <option value="BRL">BRL</option>
+                                <option value="RON">RON</option>
+                                <option value="NZD">NZD</option>
+                                <option value="TRY">TRY</option>
+                                <option value="JPY">JPY</option>
+                                <option value="KRW">KRW</option>
+                                <option value="HUF">HUF</option>
+                                <option value="AUD">AUD</option>
+                                
+                            </select>
+
+                </div>
+                <div class="calcBox">
+                    <div class="Input"><input type="number" class="forInput rightInput"></div>
+                    <div class="curInfo">
+                        <p class="forCurInfo rightCurInfo">1 RUB= 0.093434 USD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="siteForLoading">
+        <div class="forLoading">Loading
+            <div class="loader"></div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

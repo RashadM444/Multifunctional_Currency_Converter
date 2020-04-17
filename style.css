@@ -1,0 +1,265 @@
+* {
+    font-family: "Baloo Chettan 2", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1152px;
+}
+
+
+/**Header*/
+
+a {
+    text-decoration: none;
+    color: #959BA4;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+.forLogo {
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.headerElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #F5F5F6;
+    height: 50px;
+    width: 1152px;
+}
+
+.forHeaders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.forHeaders div {
+    padding-bottom: 14px;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.forHeaders div a:hover {
+    color: black;
+    font-size: 18px;
+}
+
+#login {
+    width: 58px;
+    height: 33px;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 11px;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+/*Body Elements*/
+
+.bodyElements {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    width: 1152px; */
+    /* margin-left: 370px; */
+    vertical-align: middle;
+    margin-top: 56px;
+}
+
+.forHeaderTag {
+    display: flex;
+    justify-content: left;
+    margin-left: 250px;
+    margin-bottom: 30px;
+}
+
+.calcElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.calcBox {
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 259px;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forCurrencies {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    /* border: 1px solid #E5E5E5; */
+    /* border-radius: 3px; */
+    /* justify-content: space-between; */
+}
+
+.cur {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid #E5E5E5; */
+    width: 50px;
+    height: 28px;
+    border-radius: ;
+    border-top: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    border-left: 1px solid #C6C6C6;
+    text-align: center;
+    cursor: pointer;
+    color: #C6C6C6;
+}
+
+.cur:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.cur:last-child {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.cur:onclick {
+    background-color: yellow;
+}
+
+.active {
+    background-color: #8540DE;
+    color: whitesmoke;
+}
+
+.active-select {
+    background-color: #8540DE;
+    color: whitesmoke;
+}
+
+.forCurrencies :last-child {
+    width: 59px;
+}
+
+
+/* .cur p {
+    text-align: center;
+} */
+
+.forInput {
+    width: 124px;
+    height: 38px;
+    margin-left: 14px;
+    margin-top: 11px;
+    border: none;
+    font-size: 38px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.curInfo {
+    margin-left: 16px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    height: 28px;
+}
+
+.forCurInfo {
+    color: #C6C6C6;
+}
+
+.calcCenter {
+    margin-top: 90px;
+    margin-left: 44px;
+    margin-right: 44px;
+    cursor: pointer;
+}
+
+select {
+    text-decoration: none;
+    border: none;
+    width: 45px;
+    cursor: pointer;
+    /* width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px; */
+    /* background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+    -webkit-appearance: none; */
+    /* background-position-x: 244px; */
+}
+
+
+/* Loading site*/
+
+.siteForLoading {
+    position: absolute;
+    top: 0em;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.forLoading {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    /* Light grey */
+    border-top: 5px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
